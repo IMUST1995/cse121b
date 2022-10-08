@@ -5,7 +5,7 @@
 // Step 1: Declare a new variable to hold information about yourself
 const persona = {
     named: 'Zeir Braidi',
-    photo: '../../week02/images/zeir.jpeg',
+    photo: 'images/zeir.jpeg',
     favoriteFoods: ['meat', 'chicken', 'fish', 'seafood', 'blackberries', 'strawberries', 'blueberries', 'raspberries', 'pineapple'],
     hobbies: ['read', 'languages', 'workout', 'travel'],
     placesLived: [{
