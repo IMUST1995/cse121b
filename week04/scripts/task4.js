@@ -73,11 +73,14 @@ listHobbies.forEach(e => {
 // - Create an HTML <dd> element and put its length property in the <dd> element
 const placesLived =  persona.placesLived
 const listPlacesLived = placesLived.map((e) => {
-    return `<dt>${e.place}:<dt/><dd>${e.length}</>`
+    return `<dt>${e.place}:<dt/><dd>${e.length}</dd>`
 })
 
 // Step 9: Append the HTML <dt> and <dd> elements created above to the HTML <dl> element with an ID of places-lived
 const placeLivedContainer = document.getElementById('places-lived')
-listPlacesLived.forEach(e => {
+/* listPlacesLived.forEach(e => {
     placeLivedContainer.innerHTML += e
-})
+}) */
+for(e of persona){
+    placeLivedContainer.innerHTML += `<dt>${e.placesLived.place}:<dt/><dd>${e.placesLived.length}</dd>}`
+}
